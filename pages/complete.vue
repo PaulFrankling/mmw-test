@@ -11,19 +11,20 @@
     </div>
     <div class="container main-content">
       <h1 class="title mt-6">
-        Mainline Menswear <br />
-        Front End Technical Test
+        Thank You <br />
+        For Your Enquiry!
       </h1>
-      <p class="subtitle mt-3">Product Enquiry Web Application</p>
-      <nuxt-link to="/complete" class="button is-medium is-uppercase"
-        >Start</nuxt-link
+      <p class="subtitle mt-3">We will be in touch with you soon.</p>
+      <nuxt-link to="/" class="button is-medium is-uppercase"
+        >Return to Start</nuxt-link
       >
     </div>
   </section>
 </template>
 
+
 <script>
 export default {
-  name: 'IndexPage',
+  name: 'CompletePage',
 }
 </script>
