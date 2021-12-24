@@ -15,8 +15,8 @@
         For Your Enquiry!
       </h1>
       <p class="subtitle mt-3">We will be in touch with you soon.</p>
-      <nuxt-link to="/" class="button is-medium is-uppercase"
-        >Return to Start</nuxt-link
+      <a href="/" class="button is-medium is-uppercase"
+        >Return to Start</a
       >
     </div>
   </section>

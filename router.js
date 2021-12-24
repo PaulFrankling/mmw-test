@@ -7,6 +7,10 @@ const router = new Router({
        {
          path: '/complete',
          component: 'pages/complete.vue'
-       }
+       },
+       {
+        path: '/products',
+        component: 'pages/products.vue'
+      }
      ]
    })

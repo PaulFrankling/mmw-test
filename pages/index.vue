@@ -15,8 +15,8 @@
         Front End Technical Test
       </h1>
       <p class="subtitle mt-3">Product Enquiry Web Application</p>
-      <nuxt-link to="/complete" class="button is-medium is-uppercase"
-        >Start</nuxt-link
+      <a href="/complete" class="button is-medium is-uppercase"
+        >Start</a
       >
     </div>
   </section>
