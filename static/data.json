@@ -1,0 +1,26 @@
+[
+    {
+        "product_id": 612476,
+        "name": "BOSS Multi Colour Triple Pack T Shirts",
+        "image": "~assets/images/products/612476.jpg",
+        "rrp_price": "35",
+        "sale_price": "29",
+        "exclusive": 1
+    },
+    {
+        "product_id": 578992,
+        "name": "Emporio Armani J06 Slim Fit Jeans Blue",
+        "image": "~assets/images/products/578992.jpg",
+        "rrp_price": "135",
+        "sale_price": "0",
+        "exclusive": 0
+    },
+    {
+        "product_id": 629441,
+        "name": "adidas Originals Gazelle Trainers Burgundy",
+        "image": "~assets/images/products/629441.jpg",
+        "rrp_price": "75",
+        "sale_price": "0",
+        "exclusive": 0
+    }
+]
