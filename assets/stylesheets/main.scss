@@ -4,13 +4,15 @@
 :root {
     --primary-color: #107cbb;
     --font-color: #000;
+    --card-title: #333;
     --button-color: #20c76e;
-    --quarternary-color: #e3e3e3;
-    --quinary-color: #ff5050;
+    --border-color: #e3e3e3;
+    --sale-price-color: #ff5050;
     --senary-color: #94e990;
-    --septenary-color: #64c1f7;
+    --banner-color: #64c1f7;
     --octonary-color: #333;
     --nonary-color: #d0eeff;
+    --card-color: #fff;
     --button-font-color: #fff;
     --background-image: url('assets/images/blue_background.jpg');
     --font-family: 'Mulish', sans-serif;
@@ -20,11 +22,13 @@
 html[data-theme="dark"] {
     --primary-color: #333;
     --font-color: #e3e3e3;
+    --card-title: #fff;
     --button-color: #fdd842;
-    --quarternary-color: #616161;
+    --border-color: #000;
+    --card-color: #616161;
     --quinary-color: #ff5050;
     --senary-color: #fdeba1;
-    --septenary-color: #107cbb;
+    --banner-color: #107cbb;
     --button-font-color: #333;
     --background-image: url('assets/images/dark_background.jpg');
     --font-family: 'Roboto Slab', serif;
@@ -44,7 +48,7 @@ body {
 }
 
 .main-content {
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 .main-content .title {
@@ -136,4 +140,48 @@ input:checked + .slider:before {
 	color: var(--button-font-color);
     font-size: 30px;
     margin-top: 11px;
+}
+
+.products-page {
+    margin-top: 50px;
+}
+
+.products-page .button {
+    background-color: var(--button-color);
+    color: var(--button-font-color);
+    border: 0;
+    font-weight: 900;
+    font-size: 20px;
+    border-radius: var(--border-radius);
+}
+
+div .card {
+    padding: 20px 10px 10px 10px;
+    border: 1.4px solid var(--primary-color);
+    background-color: var(--card-color);
+    height: calc(100% - 15px);
+}
+
+div .image img {
+    border: 2px solid var(--border-color);
+}
+
+div .card .product-name {
+    color: var(--card-title);
+}
+
+div .card .rrp-price {
+    color: var(--font-color);
+}
+
+div .card .sale-price {
+    color: var(--sale-price-color);
+    font-size: 20px;
+}
+
+.exclusive-banner h6 {
+    background-color: var(--banner-color);
+    color: var(--font-color);
+    margin-bottom: 5px;
+    padding: 5px;
 }
