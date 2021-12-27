@@ -15,6 +15,7 @@
     --card-color: #fff;
     --button-font-color: #fff;
     --background-image: url('assets/images/blue_background.jpg');
+    --product-background: linear-gradient(to right, #107cbb, #64c1f7);
     --font-family: 'Mulish', sans-serif;
     --border-radius: 0;
 }
@@ -30,6 +31,7 @@ html[data-theme="dark"] {
     --senary-color: #fdeba1;
     --banner-color: #107cbb;
     --button-font-color: #333;
+    --product-background: linear-gradient(to right, #333, #616161);
     --background-image: url('assets/images/dark_background.jpg');
     --font-family: 'Roboto Slab', serif;
     --border-radius: 50px;
@@ -142,16 +144,20 @@ input:checked + .slider:before {
     margin-top: 11px;
 }
 
-.products-page {
+.product-pages {
+    background-image: var(--product-background);
+}
+
+.products-content {
     margin-top: 50px;
 }
 
-.products-page .button {
+.products-content .button {
     background-color: var(--button-color);
     color: var(--button-font-color);
     border: 0;
     font-weight: 900;
-    font-size: 20px;
+    font-size: 13px;
     border-radius: var(--border-radius);
 }
 

@@ -1,5 +1,5 @@
 <template>
-  <section class="section content has-text-centered">
+  <section class="section content has-text-centered product-pages">
     <div class="theme-switch-wrapper">
       <label class="theme-switch" for="checkbox">
         <input type="checkbox" id="checkbox" />
@@ -9,7 +9,7 @@
         </div>
       </label>
     </div>
-    <div class="container products-page">
+    <div class="container products-content">
       <div class="columns">
         <div
           class="column is-4"
@@ -53,39 +53,12 @@
 </template>
 
 <script>
+import json from '@/static/product_data.json'
 export default {
   name: "ProductPage",
   data() {
     return {
-      products: [
-        {
-          product_id: 612476,
-          name: "BOSS Multi Colour Triple Pack T Shirts",
-          image:
-            "https://github.com/mmw-frontend/frontend_test/blob/master/images/product-images/612476.jpg?raw=true",
-          rrp_price: "35",
-          sale_price: "29",
-          exclusive: 1,
-        },
-        {
-          product_id: 578992,
-          name: "Emporio Armani J06 Slim Fit Jeans Blue",
-          image:
-            "https://github.com/mmw-frontend/frontend_test/blob/master/images/product-images/578992.jpg?raw=true",
-          rrp_price: "135",
-          sale_price: "0",
-          exclusive: 0,
-        },
-        {
-          product_id: 629441,
-          name: "adidas Originals Gazelle Trainers Burgundy",
-          image:
-            "https://github.com/mmw-frontend/frontend_test/blob/master/images/product-images/629441.jpg?raw=true",
-          rrp_price: "75",
-          sale_price: "0",
-          exclusive: 0,
-        },
-      ],
+      products: json
     };
   },
 };
