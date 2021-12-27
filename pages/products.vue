@@ -29,11 +29,22 @@
               </figure>
             </div>
             <h5 class="mt-2 product-name">{{ product.name }}</h5>
-            <h6 class="rrp-price">£{{ product.rrp_price }}</h6>
+            <h6
+              class="rrp-price"
+              v-bind:style="[
+                product.sale_price > 0
+                  ? { 'text-decoration': 'line-through' }
+                  : { 'text-decoration': 'none' },
+              ]"
+            >
+              £{{ product.rrp_price }}
+            </h6>
             <h6 class="sale-price is-uppercase" v-if="product.sale_price > 0">
               Sale £{{ product.sale_price }}
             </h6>
-            <a href="/" class="button is-medium is-uppercase mb-5">Enquire about this item</a>
+            <a href="/" class="button is-medium is-uppercase mb-5"
+              >Enquire about this item</a
+            >
           </div>
         </div>
       </div>
