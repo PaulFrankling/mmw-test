@@ -42,8 +42,10 @@
             <h6 class="sale-price is-uppercase" v-if="product.sale_price > 0">
               Sale £{{ product.sale_price }}
             </h6>
-            <a href="/" class="button is-medium is-uppercase mb-5"
-              >Enquire about this item</a
+            <NuxtLink
+              :to="`/product/${product.product_id}`"
+              class="button is-medium is-uppercase mb-5"
+              >Enquire about this item</NuxtLink
             >
           </div>
         </div>
@@ -53,12 +55,12 @@
 </template>
 
 <script>
-import json from '@/static/product_data.json'
+import json from "@/static/product_data.json";
 export default {
   name: "ProductPage",
   data() {
     return {
-      products: json
+      products: json,
     };
   },
 };

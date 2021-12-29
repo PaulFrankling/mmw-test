@@ -15,8 +15,8 @@
         Front End Technical Test
       </h1>
       <p class="subtitle mt-3">Product Enquiry Web Application</p>
-      <a href="/products" class="button is-medium is-uppercase"
-        >Start</a
+      <NuxtLink :to="{name: 'products'}" class="button is-medium is-uppercase"
+        >Start</NuxtLink
       >
     </div>
   </section>
