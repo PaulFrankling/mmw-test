@@ -43,7 +43,7 @@
               Sale £{{ product.sale_price }}
             </h6>
             <NuxtLink
-              :to="`/product/${product.product_id}`"
+              :to="{name:'product-id', params:{id:product.product_id}}"
               class="button is-medium is-uppercase mb-5"
               >Enquire about this item</NuxtLink
             >

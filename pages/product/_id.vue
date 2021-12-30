@@ -9,17 +9,24 @@
         </div>
       </label>
     </div>
-    {{this.$route.params.id}}
+    <div class="container products-content">
+      <div class="columns">
+        <div class="column is-3">
+          <h1>{{ this.$route.params.id }}</h1>
+        </div>
+        <div class="column is-3">
+          <h1>{{ this.$route.params.id }}</h1>
+        </div>
+        <div class="column is-6">
+          <h1>{{ this.$route.params.id }}</h1>
+        </div>
+      </div>
+    </div>
   </section>
 </template>
 
 <script>
 export default {
   name: "ProductIdPage",
-  data() {
-    return {
-      id: this.$route.params.product_id
-    };
-  },
 };
 </script>
