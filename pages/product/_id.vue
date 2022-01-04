@@ -112,7 +112,7 @@
                 required
               ></textarea>
             </div>
-            <legend class="has-text-left-desktop has-text-weight-bold">
+            <legend class="has-text-left-desktop mb-2 has-text-weight-bold">
               Fields marked with an *asterisk are compulsory.
             </legend>
             <div class="field is-grouped is-grouped-right">
@@ -142,3 +142,13 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+html {
+  min-height: 100%;
+  background-image: var(--product-background);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+</style>

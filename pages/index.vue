@@ -15,8 +15,10 @@
         Front End Technical Test
       </h1>
       <p class="subtitle mt-3">Product Enquiry Web Application</p>
-      <a href="
-      /products" class="button is-medium is-uppercase"
+      <a
+        href="
+      /products"
+        class="button is-medium is-uppercase"
         >Start</a
       >
     </div>
@@ -25,6 +27,6 @@
 
 <script>
 export default {
-  name: 'IndexPage',
-}
+  name: "IndexPage",
+};
 </script>

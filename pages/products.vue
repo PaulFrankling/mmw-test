@@ -79,3 +79,13 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+html {
+  min-height: 100%;
+  background-image: var(--product-background);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+</style>
