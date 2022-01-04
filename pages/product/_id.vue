@@ -25,7 +25,12 @@
             </div>
             <div class="card-image">
               <figure class="image is-4by3">
-                <img :src="product.image" :alt="product.product[0].name" />
+                <img
+                  :src="
+                    require(`~/assets/images/products/${product.product[0].product_id}.jpg`)
+                  "
+                  :alt="product.product[0].name"
+                />
               </figure>
             </div>
             <h5 class="mt-2">{{ product.product[0].name }}</h5>
