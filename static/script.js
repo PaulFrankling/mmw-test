@@ -26,10 +26,17 @@ toggleSwitch.addEventListener("change", switchTheme, false);
 $("#form").validate({
   rules: {
     fullname: { required: true },
-    sizeSelected: { required: true },
+    sizeSelected: "required",
     email: { email: true, required: true },
-    competitor: { required: true },
-    enquiry: { required: true, minlength: 50 },
+    competitor: "required",
+    competitorUrl: { required: false },
+    enquiry: { required: true, minlength: 50, maxlength: 200 },
+    productId: "required",
+  },
+
+  messages: {
+    fullname: "Please fill name",
+    email: { email: "Enter Valid Email!", required: "Enter Email!" },
   },
 
   submitHandler: function (form) {

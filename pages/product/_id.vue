@@ -51,6 +51,13 @@
             >
               Sale £{{ product.product[0].sale_price }}
             </h6>
+            <div>
+              <input
+                type="hidden"
+                name="productId"
+                :value="product.product[0].product_id"
+              />
+            </div>
           </div>
           <div class="column is-3 has-text-centered">
             <div>
@@ -60,13 +67,13 @@
               <select
                 multiple
                 size="5"
-                id="sizeSelected"
+                name="sizeSelected"
                 class="no-scroll is-uppercase has-text-centered"
                 required
               >
                 <option :value="product.sizes[0].size">Small</option>
                 <option :value="product.sizes[1].size">Medium</option>
-                <option :value="product.sizes[2].size">Large</option>
+                <option :value="product.sizes[2].size" selected>Large</option>
                 <option :value="product.sizes[3].size">X Large</option>
                 <option :value="product.sizes[4].size">XX Large</option>
               </select>
@@ -106,19 +113,17 @@
                 >
               </div>
               <label class="radio">
-                <input
-                  type="radio"
-                  id="competitor"
-                  name="answer"
-                  value="yes"
-                  required
-                />
+                <input type="radio" name="competitor" value="yes" />
                 Yes
               </label>
               <label class="radio">
-                <input type="radio" name="answer" value="no" checked />
+                <input type="radio" name="competitor" value="no" checked />
                 No
               </label>
+            </div>
+            <div class="control has-text-left-desktop mt-2">
+              <label class="has-text-weight-bold label">Competitor URL</label>
+              <input class="input" name="competitorUrl" type="text" />
             </div>
             <div>
               <label
