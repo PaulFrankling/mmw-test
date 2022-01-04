@@ -1,193 +1,229 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;900&display=swap");
 
 :root {
-    --primary-color: #107cbb;
-    --font-color: #000;
-    --card-title: #333;
-    --button-color: #20c76e;
-    --border-color: #e3e3e3;
-    --sale-price-color: #ff5050;
-    --senary-color: #94e990;
-    --banner-color: #64c1f7;
-    --octonary-color: #333;
-    --nonary-color: #d0eeff;
-    --card-color: #fff;
-    --button-font-color: #fff;
-    --background-image: url('assets/images/blue_background.jpg');
-    --product-background: linear-gradient(to right, #107cbb, #64c1f7);
-    --font-family: 'Mulish', sans-serif;
-    --border-radius: 0;
+  --primary-color: #107cbb;
+  --font-color: #000;
+  --card-title: #333;
+  --button-color: #20c76e;
+  --border-color: #e3e3e3;
+  --sale-price-color: #ff5050;
+  --senary-color: #94e990;
+  --banner-color: #64c1f7;
+  --octonary-color: #333;
+  --nonary-color: #d0eeff;
+  --card-color: #fff;
+  --button-font-color: #fff;
+  --background-image: url("assets/images/blue_background.jpg");
+  --product-background: linear-gradient(to right, #107cbb, #64c1f7);
+  --font-family: "Mulish", sans-serif;
+  --border-radius: 0;
 }
 
 html[data-theme="dark"] {
-    --primary-color: #333;
-    --font-color: #e3e3e3;
-    --card-title: #fff;
-    --button-color: #fdd842;
-    --border-color: #000;
-    --card-color: #616161;
-    --quinary-color: #ff5050;
-    --senary-color: #fdeba1;
-    --banner-color: #107cbb;
-    --button-font-color: #333;
-    --product-background: linear-gradient(to right, #333, #616161);
-    --background-image: url('assets/images/dark_background.jpg');
-    --font-family: 'Roboto Slab', serif;
-    --border-radius: 50px;
+  --primary-color: #333;
+  --font-color: #e3e3e3;
+  --card-title: #fff;
+  --button-color: #fdd842;
+  --border-color: #000;
+  --card-color: #616161;
+  --quinary-color: #ff5050;
+  --senary-color: #fdeba1;
+  --banner-color: #107cbb;
+  --button-font-color: #333;
+  --product-background: linear-gradient(to right, #333, #616161);
+  --background-image: url("assets/images/dark_background.jpg");
+  --font-family: "Roboto Slab", serif;
+  --border-radius: 50px;
 }
 
 html {
-    min-height: 100%;
-    background-image: var(--background-image);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+  min-height: 100%;
+  background-image: var(--background-image);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 body {
-    font-family: var(--font-family);
+  font-family: var(--font-family);
 }
 
 .main-content {
-    margin-top: 80px;
+  margin-top: 80px;
 }
 
 .main-content .title {
-    font-weight: 900;
-    font-size: 40px;
-    color: var(--font-color);
+  font-weight: 900;
+  font-size: 40px;
+  color: var(--font-color);
 }
 
 .main-content .subtitle {
-    font-weight: 400;
-    font-size: 25px;
-    color: var(--font-color);
+  font-weight: 400;
+  font-size: 25px;
+  color: var(--font-color);
 }
 
 .main-content .button {
-    background-color: var(--button-color);
-    color: var(--button-font-color);
-    border: 0;
-    margin-top: 50px;
-    font-weight: 900;
-    border-radius: var(--border-radius);
-    width: 250px;
-    height: 60px;
+  background-color: var(--button-color);
+  color: var(--button-font-color);
+  border: 0;
+  margin-top: 50px;
+  font-weight: 900;
+  border-radius: var(--border-radius);
+  width: 250px;
+  height: 60px;
 }
 
 .theme-switch-wrapper {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .theme-switch {
-    display: inline-block;
-    height: 51px;
-    position: relative;
-    width: 90px;
-}
-  
-.theme-switch input {
-    display:none;
-}
-  
-.slider {
-    background-color: var(--button-color);
-    color: var(--button-font-color);
-    bottom: 0;
-    cursor: pointer;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transition: .4s;
-}
-  
-.slider:before {
-    background-color: var(--button-font-color);
-    bottom: 6px;
-    content: "";
-    height: 39px;
-    left: 6px;
-    position: absolute;
-    transition: .4s;
-    width: 39px;
-}
-  
-input:checked + .slider {
-    background-color: var(--button-color);
-    color: var(--button-font-color);
-}
-  
-input:checked + .slider:before {
-    transform: translateX(39px);
-}
-  
-.slider.round {
-    border-radius: 51px;
-}
-  
-.slider.round:before {
-    border-radius: 50%;
+  display: inline-block;
+  height: 51px;
+  position: relative;
+  width: 90px;
 }
 
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background-color: var(--button-color);
+  color: var(--button-font-color);
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+
+.slider:before {
+  background-color: var(--button-font-color);
+  bottom: 6px;
+  content: "";
+  height: 39px;
+  left: 6px;
+  position: absolute;
+  transition: 0.4s;
+  width: 39px;
+}
+
+input:checked + .slider {
+  background-color: var(--button-color);
+  color: var(--button-font-color);
+}
+
+input:checked + .slider:before {
+  transform: translateX(39px);
+}
+
+.slider.round {
+  border-radius: 51px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
 
 .fa-moon {
-	color: var(--button-font-color);
-    font-size: 30px;
+  color: var(--button-font-color);
+  font-size: 30px;
 }
 
 .fa-sun {
-	color: var(--button-font-color);
-    font-size: 30px;
-    margin-top: 11px;
+  color: var(--button-font-color);
+  font-size: 30px;
+  margin-top: 11px;
 }
 
 .product-pages {
-    background-image: var(--product-background);
+  background-image: var(--product-background);
 }
 
 .products-content {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
-.products-content .button {
-    background-color: var(--button-color);
-    color: var(--button-font-color);
-    border: 0;
-    font-weight: 900;
-    font-size: 13px;
-    border-radius: var(--border-radius);
+.products-content .product-button {
+  background-color: var(--button-color);
+  color: var(--button-font-color);
+  border: 0;
+  font-weight: 900;
+  font-size: 13px;
+  border-radius: var(--border-radius);
 }
 
 div .card {
-    padding: 20px 10px 10px 10px;
-    border: 1.4px solid var(--primary-color);
-    background-color: var(--card-color);
-    height: calc(100% - 15px);
+  padding: 20px 10px 10px 10px;
+  border: 1.4px solid var(--primary-color);
+  background-color: var(--card-color);
+  height: calc(100% - 15px);
 }
 
 div .image img {
-    border: 2px solid var(--border-color);
+  border: 2px solid var(--border-color);
 }
 
 div .card .product-name {
-    color: var(--card-title);
+  color: var(--card-title);
 }
 
 div .card .rrp-price {
-    color: var(--font-color);
+  color: var(--font-color);
 }
 
 div .card .sale-price {
-    color: var(--sale-price-color);
-    font-size: 20px;
+  color: var(--sale-price-color);
+  font-size: 20px;
 }
 
 .exclusive-banner h6 {
-    background-color: var(--banner-color);
-    color: var(--font-color);
-    margin-bottom: 5px;
-    padding: 5px;
+  background-color: var(--banner-color);
+  color: var(--font-color);
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+.size-label {
+  font-weight: 900;
+}
+
+.size-select {
+  margin-top: 20px;
+}
+
+.no-scroll::-webkit-scrollbar {
+  display: none;
+}
+.no-scroll::-moz-scrollbar {
+  display: none;
+}
+.no-scroll::-o-scrollbar {
+  display: none;
+}
+.no-scroll::-google-ms-scrollbar {
+  display: none;
+}
+.no-scroll::-khtml-scrollbar {
+  display: none;
+}
+
+.products-content legend {
+  margin-top: 50px;
+  font-size: 12px;
+}
+
+.submit-btn {
+  background-color: var(--button-color) !important;
+  color: var(--button-font-color) !important;
+  border: 0 !important;
+  font-weight: 900 !important;
+  border-radius: var(--border-radius) !important;
 }

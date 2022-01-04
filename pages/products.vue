@@ -43,8 +43,8 @@
               Sale £{{ product.sale_price }}
             </h6>
             <NuxtLink
-              :to="{name:'product-id', params:{id:product.product_id}}"
-              class="button is-medium is-uppercase mb-5"
+              :to="{ name: 'product-id', params: { id: product.product_id } }"
+              class="button product-button is-medium is-uppercase mb-5"
               >Enquire about this item</NuxtLink
             >
           </div>
@@ -55,13 +55,22 @@
 </template>
 
 <script>
-import json from "@/static/product_data.json";
 export default {
-  name: "ProductPage",
   data() {
     return {
-      products: json,
+      products: [],
     };
+  },
+  activated() {
+    // Call fetch again if last fetch more than 30 sec ago
+    if (this.$fetchState.timestamp <= Date.now() - 30000) {
+      this.$fetch();
+    }
+  },
+  async fetch() {
+    this.products = await fetch(
+      "https://frontendtest.mainlinemenswear.co.uk/products"
+    ).then((res) => res.json());
   },
 };
 </script>
