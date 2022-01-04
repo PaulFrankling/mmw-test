@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "mmw-test-app",
+    title: "MMW Frontend Test",
     htmlAttrs: {
       lang: "en",
     },

@@ -63,10 +63,8 @@
             <div>
               <label class="is-uppercase size-label">Select your size*</label>
             </div>
-            <div class="select is-multiple size-select">
+            <div class="select size-select">
               <select
-                multiple
-                size="5"
                 name="sizeSelected"
                 class="no-scroll is-uppercase has-text-centered"
                 required

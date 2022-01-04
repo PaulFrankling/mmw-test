@@ -34,11 +34,6 @@ $("#form").validate({
     productId: "required",
   },
 
-  messages: {
-    fullname: "Please fill name",
-    email: { email: "Enter Valid Email!", required: "Enter Email!" },
-  },
-
   submitHandler: function (form) {
     $.ajax({
       url: form.action,
