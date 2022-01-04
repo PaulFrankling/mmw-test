@@ -14,6 +14,7 @@
         class="control"
         action="https://frontendtest.mainlinemenswear.co.uk/submit"
         method="POST"
+        id="form"
       >
         <div class="columns card">
           <div class="column is-3">
@@ -61,6 +62,7 @@
                 size="5"
                 id="sizeSelected"
                 class="no-scroll is-uppercase has-text-centered"
+                required
               >
                 <option :value="product.sizes[0].size">Small</option>
                 <option :value="product.sizes[1].size">Medium</option>
@@ -74,14 +76,26 @@
             <div class="field">
               <label class="label has-text-left-desktop">Full Name*</label>
               <div class="control">
-                <input class="input" id="fullname" type="text" required />
+                <input
+                  class="input"
+                  id="fullname"
+                  name="fullname"
+                  type="text"
+                  required
+                />
               </div>
             </div>
 
             <div class="field">
               <label class="label has-text-left-desktop">Email*</label>
               <div class="control">
-                <input class="input" id="email" type="email" required />
+                <input
+                  class="input"
+                  id="email"
+                  name="email"
+                  type="email"
+                  required
+                />
               </div>
             </div>
             <div class="control has-text-left-desktop">
@@ -92,11 +106,17 @@
                 >
               </div>
               <label class="radio">
-                <input type="radio" id="competitor" name="answer" required />
+                <input
+                  type="radio"
+                  id="competitor"
+                  name="answer"
+                  value="yes"
+                  required
+                />
                 Yes
               </label>
               <label class="radio">
-                <input type="radio" name="answer" checked />
+                <input type="radio" name="answer" value="no" checked />
                 No
               </label>
             </div>
@@ -108,6 +128,7 @@
               <textarea
                 class="textarea"
                 rows="5"
+                name="enquiry"
                 id="enquiry"
                 required
               ></textarea>
