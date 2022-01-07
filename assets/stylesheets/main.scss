@@ -8,10 +8,7 @@
   --button-color: #20c76e;
   --border-color: #e3e3e3;
   --sale-price-color: #ff5050;
-  --senary-color: #94e990;
   --banner-color: #64c1f7;
-  --octonary-color: #333;
-  --nonary-color: #d0eeff;
   --card-color: #fff;
   --button-font-color: #fff;
   --background-image: url("assets/images/blue_background.jpg");
@@ -27,8 +24,6 @@ html[data-theme="dark"] {
   --button-color: #fdd842;
   --border-color: #000;
   --card-color: #616161;
-  --quinary-color: #ff5050;
-  --senary-color: #fdeba1;
   --banner-color: #107cbb;
   --button-font-color: #333;
   --product-background: linear-gradient(to right, #333, #616161);
@@ -189,26 +184,11 @@ div .card .sale-price {
 
 .size-label {
   font-weight: 900;
+  color: var(--font-color);
 }
 
 .size-select {
   margin-top: 20px;
-}
-
-.no-scroll::-webkit-scrollbar {
-  display: none;
-}
-.no-scroll::-moz-scrollbar {
-  display: none;
-}
-.no-scroll::-o-scrollbar {
-  display: none;
-}
-.no-scroll::-google-ms-scrollbar {
-  display: none;
-}
-.no-scroll::-khtml-scrollbar {
-  display: none;
 }
 
 .products-content legend {
@@ -226,4 +206,23 @@ div .card .sale-price {
 
 .columns {
   margin: 0;
+}
+
+label,
+legend {
+  color: var(--font-color) !important;
+}
+
+label.error {
+  color: red;
+  font-size: 1rem;
+  display: block;
+  margin-top: 5px;
+}
+
+input.error,
+textarea.error {
+  border: 1px solid red;
+  font-weight: 300;
+  color: red;
 }

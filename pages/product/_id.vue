@@ -34,7 +34,7 @@
                 />
               </figure>
             </div>
-            <h5 class="mt-2">{{ product.product[0].name }}</h5>
+            <h5 class="product-name mt-2">{{ product.product[0].name }}</h5>
             <h6
               class="rrp-price"
               v-bind:style="[
@@ -66,7 +66,7 @@
             <div class="select size-select">
               <select
                 name="sizeSelected"
-                class="no-scroll is-uppercase has-text-centered"
+                class="is-uppercase has-text-centered"
                 required
               >
                 <option :value="product.sizes[0].size">Small</option>
@@ -84,6 +84,7 @@
                 <input
                   class="input"
                   id="fullname"
+                  placeholder="John Smith"
                   name="fullname"
                   type="text"
                   required
@@ -97,6 +98,7 @@
                 <input
                   class="input"
                   id="email"
+                  placeholder="john.smith@example.com"
                   name="email"
                   type="email"
                   required
@@ -130,9 +132,11 @@
               >
               <textarea
                 class="textarea"
-                rows="5"
+                rows="3"
                 name="enquiry"
                 id="enquiry"
+                minlength="50"
+                maxlength="200"
                 required
               ></textarea>
             </div>

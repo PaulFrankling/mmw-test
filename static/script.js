@@ -1,3 +1,4 @@
+// Light/dark mode
 const toggleSwitch = document.querySelector(
   '.theme-switch input[type="checkbox"]'
 );
@@ -23,6 +24,7 @@ function switchTheme(e) {
 
 toggleSwitch.addEventListener("change", switchTheme, false);
 
+// Enquiry form validation
 $("#form").validate({
   rules: {
     fullname: { required: true },
@@ -32,6 +34,24 @@ $("#form").validate({
     competitorUrl: { required: false },
     enquiry: { required: true, minlength: 50, maxlength: 200 },
     productId: "required",
+  },
+
+  messages: {
+    fullname: {
+      required: "Please enter your full name",
+    },
+    email: {
+      email: "Please use the format: 'abc@domain.tld'",
+      required: "Please enter an email address",
+    },
+    competitorUrl: {
+      required: "If yes, please can you state the URL of the competitor",
+    },
+    enquiry: {
+      required: "Please enter a message in your enquiry",
+      minlength: "Must be at least 50 characters",
+      maxlength: "Must be below the 200 characters limit",
+    },
   },
 
   submitHandler: function (form) {
